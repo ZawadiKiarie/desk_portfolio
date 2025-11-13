@@ -134,40 +134,71 @@ export function DeskModel1(props) {
           name="CV_Frame_two_hover"
           geometry={nodes.CV_Frame_two.geometry}
           material={nodes.CV_Frame_two.material}
-          onPointerOver={() => handleHoverIn(cvFrame)}
-          onPointerOut={() => handleHoverOut(cvFrame)}
+          onPointerOver={(e) => {
+            e.stopPropagation();
+            handleHoverIn(cvFrame);
+          }}
+          onPointerOut={(e) => {
+            e.stopPropagation();
+            handleHoverOut(cvFrame);
+          }}
+          // onPointerOut={() => handleHoverOut(cvFrame)}
         />
         <mesh
           ref={aboutFrame}
           name="About_Frame_two_hover"
           geometry={nodes.About_Frame_two.geometry}
           material={nodes.About_Frame_two.material}
-          onPointerOver={() => handleHoverIn(aboutFrame)}
-          onPointerOut={() => handleHoverOut(aboutFrame)}
+          onPointerOver={(e) => {
+            e.stopPropagation();
+            handleHoverIn(aboutFrame);
+          }}
+          onPointerOut={(e) => {
+            e.stopPropagation();
+            handleHoverOut(aboutFrame);
+          }}
         />
         <mesh
           ref={experienceFrame}
           name="Experience_Frame_two_hover"
           geometry={nodes.Experience_Frame_two.geometry}
           material={nodes.Experience_Frame_two.material}
-          onPointerOver={() => handleHoverIn(experienceFrame)}
-          onPointerOut={() => handleHoverOut(experienceFrame)}
+          onPointerOver={(e) => {
+            e.stopPropagation();
+            handleHoverIn(experienceFrame);
+          }}
+          onPointerOut={(e) => {
+            e.stopPropagation();
+            handleHoverOut(experienceFrame);
+          }}
         />
         <mesh
           ref={educationFrame}
           name="Education_Frame_two_hover"
           geometry={nodes.Education_Frame_two.geometry}
           material={nodes.Education_Frame_two.material}
-          onPointerOver={() => handleHoverIn(educationFrame)}
-          onPointerOut={() => handleHoverOut(educationFrame)}
+          onPointerOver={(e) => {
+            e.stopPropagation();
+            handleHoverIn(educationFrame);
+          }}
+          onPointerOut={(e) => {
+            e.stopPropagation();
+            handleHoverOut(educationFrame);
+          }}
         />
         <mesh
           ref={letter}
           name="Contact_Letter_two_hover"
           geometry={nodes.Contact_Letter_two.geometry}
           material={nodes.Contact_Letter_two.material}
-          onPointerOver={() => handleLetterHoverIn(letter)}
-          onPointerOut={() => handleLetterHoverOut(letter)}
+          onPointerOver={(e) => {
+            e.stopPropagation();
+            handleLetterHoverIn(letter);
+          }}
+          onPointerOut={(e) => {
+            e.stopPropagation();
+            handleLetterHoverOut(letter);
+          }}
         />
         <mesh
           name="Cat_two"
