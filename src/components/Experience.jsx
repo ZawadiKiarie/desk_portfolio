@@ -1,7 +1,7 @@
 import { OrbitControls, PerspectiveCamera } from "@react-three/drei";
 // import { useControls } from "leva";
-import { DeskModel1 } from "./DeskPortfolioV1";
 import { useMobile } from "../hooks/useMobile";
+import { DeskModel5 } from "./DeskPortfolioV5";
 
 export const Experience = () => {
   // const { position } = useControls({
@@ -28,8 +28,7 @@ export const Experience = () => {
             : [1.1, 4.6, 17.5]
         }
       />
-      <DeskModel1 rotation-y={-Math.PI / 2} scale={8} position={[1, 1, 1]} />
-      {/* <DeskModel2 rotation-y={-Math.PI / 2} scale={8} position={(1, 1, 1)} /> */}
+      <DeskModel5 rotation-y={-Math.PI / 2} scale={8} position={[1, 1, 1]} />
     </>
   );
 };
