@@ -23,6 +23,7 @@ export const useMobile = () => {
         setDevice("desktop");
       }
     };
+    handleResize();
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
