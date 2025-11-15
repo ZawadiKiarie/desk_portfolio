@@ -3,7 +3,7 @@
 ![Portfolio picture](public/images/deskportfolio.png)
 
 Desk Portfolio made with love ❤️
-It showcases my work, about me, education, experience and contact details.
+It showcases about me, education, experience, projects and contact details.
 
 [View my portfolio](https://desk-portfolio-gamma.vercel.app/)
 
